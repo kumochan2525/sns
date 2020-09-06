@@ -15,7 +15,7 @@
                     <div class='text'>ID</div>
                 </el-col>
                 <el-col :span='12'>
-                    <el-input v-model='uesrId'/>
+                    <el-input v-model='userID'/>
                 </el-col>
             </el-row>
             <el-row class='password-info input-area'>
@@ -23,7 +23,7 @@
                     <div class='text'>Password</div>
                 </el-col>
                 <el-col :span='12'>
-                    <el-input type='password' v-model='password'>
+                    <el-input type='password' v-model='password'/>
                 </el-col>
             </el-row>
             <el-button class='auth-button' type='primary' native-type='submit'>サインアップ</el-button>

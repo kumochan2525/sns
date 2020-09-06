@@ -6,10 +6,10 @@
             <el-col class='todo-card' :span='8'>
                 <el-card class='box-card'>
                     <div class='card-header' slot='header'>
-                        <el-input v-model='cardTitle'>
+                        <el-input v-model='cardTitle'/>
                     </div>
                     <div class='card-body'>
-                        <el-input type='textarea' :rows='10' v-model='cardBody'>
+                        <el-input type='textarea' :rows='10' v-model='cardBody'/>
                     </div>
                     <el-button class='card-button card-create-button' type='primary' @click='create'>作成</el-button>
                 </el-card>
@@ -52,9 +52,9 @@ export default class TODO extends Vue {
 
   // サインアウト処理
   public signOut() {
-    Auth.signOut().then(data => {
+    Auth.signOut().then((data) => {
       return router.push('/signIn');
-    }).catch(err => {
+    }).catch((err) => {
       console.error(err);
     });
   }
@@ -65,8 +65,8 @@ export default class TODO extends Vue {
     const gqlBody = `
       mutation create {
         createTodo(input: {
-          name: '${this.cardTitle}'
-          description: '${this.cardBody}'
+          name: "${this.cardTitle}"
+          description: "${this.cardBody}"
         }) {
           id
           name
@@ -84,7 +84,7 @@ export default class TODO extends Vue {
     const gqlBody = `
       mutation delete {
         deleteTodo(input: {
-          id: '${id}'
+          id: "${id}"
         }) {
           id
         }

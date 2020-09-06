@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import SignIn from './views/SignIn.vue';
-import SignUp from './views/SignUp.vue';
-import TODO from './views/TODO.vue';
+import SignIn from '../views/SignIn.vue';
+import SignUp from '../views/SignUp.vue';
+import TODO from '../views/TODO.vue';
 
 Vue.use(Router);
 
