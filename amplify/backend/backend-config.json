@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "snse702c568": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
